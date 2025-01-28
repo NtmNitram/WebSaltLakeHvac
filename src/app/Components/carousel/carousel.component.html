@@ -1,0 +1,13 @@
+<div class="slider-container">
+    <button (click)="prevSlide()">Anterior</button>
+    <div class="slider" (mousedown)="startDragging($event)" (mousemove)="drag($event)" (mouseup)="stopDragging()" (mouseleave)="stopDragging()">
+      <div class="slide" *ngFor="let logo of logos">
+        <img [src]="logo" alt="Logo">
+      </div>
+    </div>
+    <button (click)="nextSlide()">Siguiente</button>
+  </div>
+  <div class="position-indicator">
+    <span *ngFor="let _ of logos; let i = index" [class.active]="i === slideIndex" (click)="goToSlide(i)"></span>
+  </div>
+  

@@ -1,0 +1,42 @@
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: transparent !important;
+  transition-duration: 2s;
+}
+
+/* Ajusta el fondo de la barra de navegación cuando se desplaza hacia abajo */
+nav.nav--hidden {
+  transform: translateY(-100%);
+}
+
+/* Clase para cambiar el color de fondo de la barra de navegación */
+.cambiocolor {
+  background-color: transparent !important;
+}
+
+/* Estilos del encabezado (hdr) */
+.hdr {
+  padding: 20px;
+  background-color: rgba(0, 106, 255, 0.774) !important;
+  transform: translateY(0px);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Estilos del encabezado cuando se desplaza hacia abajo (hdrScroll) */
+.hdrScroll {
+  padding: 20px;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Media query para ajustes en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  /* Ajustes de estilos para pantallas más pequeñas, si es necesario */
+  .navbar {
+    /* Ajustes específicos para la barra de navegación en pantallas pequeñas */
+  }
+
+  .hdr, .hdrScroll {
+    /* Ajustes específicos para el encabezado en pantallas pequeñas */
+  }
+}
