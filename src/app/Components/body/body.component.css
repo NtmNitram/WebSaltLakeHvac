@@ -157,7 +157,7 @@ h1{
 .lineas-negocio{
   
   width: 100%;
-  background-image: url('../../../assets/Oficina.jpeg');
+  background-image: url('../../../assets/LOGOC.jpeg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -192,4 +192,3 @@ h1{
     flex: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
   }
 }
-
